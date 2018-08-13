@@ -9,7 +9,7 @@ With these scripts, you can create your development and testing environment with
 
 ## Pre-requisites
 
-Install Docker in your development/testing environment. Go to Docker -> Preferences -> Advanced and increase your memory to atleast 6.0 GiB.
+Install Docker in your development/testing environment. Go to Docker -> Preferences -> Advanced and increase your memory to at least 6.0 GiB.
 
 
 ## What the scripts do and how they work?
