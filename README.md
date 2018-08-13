@@ -1,4 +1,4 @@
-# RedisCRDTDockerScripts
+# Redis CRDT Docker Scripts
 
 This project provides you the shell scripts necessary to:
 1. Setup a CRDT-based active-active Redis Enterprise database
