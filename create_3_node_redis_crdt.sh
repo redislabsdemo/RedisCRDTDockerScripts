@@ -14,9 +14,9 @@ docker network create network3 --subnet=172.20.0.0/16 --gateway=172.20.0.1
 
 # Start 3 docker containers. Each container is a node in a separate network
 echo "Starting Redis Enterprise as Docker containers..."
-docker run -d --cap-add sys_resource -h rp1 --name rp1 -p 8443:8443 -p 9443:9443 -p 12000:12000 --network=network1 --ip=172.18.0.2 redislabs/redis
-docker run -d --cap-add sys_resource -h rp2 --name rp2 -p 8445:8443 -p 9445:9443 -p 12002:12000 --network=network2 --ip=172.19.0.2 redislabs/redis
-docker run -d --cap-add sys_resource -h rp3 --name rp3 -p 8447:8443 -p 9447:9443 -p 12004:12000 --network=network3 --ip=172.20.0.2 redislabs/redis
+docker run -d --cap-add sys_resource -h rp1 --name rp1 -p 8443:8443 -p 9443:9443 -p 12000:12000 --network=network1 --ip=172.18.0.2 redislabs/redis:latest
+docker run -d --cap-add sys_resource -h rp2 --name rp2 -p 8445:8443 -p 9445:9443 -p 12002:12000 --network=network2 --ip=172.19.0.2 redislabs/redis:latest
+docker run -d --cap-add sys_resource -h rp3 --name rp3 -p 8447:8443 -p 9447:9443 -p 12004:12000 --network=network3 --ip=172.20.0.2 redislabs/redis:latest
 
 # Connect the networks
 docker network connect network2 rp1
